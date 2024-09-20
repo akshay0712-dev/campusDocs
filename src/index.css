@@ -375,8 +375,18 @@ footer {
     
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-    color: #fff;
     padding: 20px 0;
-    text-align: center;
     width: 100vw;
+}
+
+footer .head1{
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+footer .head2{
+    padding: 8px;
+    text-align: center;
+    color: #bbb8b8;
 }
