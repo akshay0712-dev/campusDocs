@@ -4,6 +4,8 @@ import AYearaSem from './aYearaSem.jsx'
 
 
 const syllabus = () => {
+
+    
   return (
     <>
     <SyllabusInput />

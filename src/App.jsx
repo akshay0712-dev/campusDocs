@@ -10,9 +10,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function ErrorPage() {
   return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
+    <div className="h-[30vh] flex flex-col justify-evenly items-center">
+      <h1 className="text-3xl text-center">404 - Page Not Found</h1>
+      <p className="text-lg md:text-2xl text-center">The page you are looking for does not exist.</p>
     </div>
   );
 }

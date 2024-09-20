@@ -398,7 +398,7 @@ const subjects = [
         subSubject: "",
         units: [
           {
-            unitNo: "",
+            unitNo: 0,
             chapters: ["", ""],
           },
         
@@ -448,7 +448,7 @@ const aYearaSem = () => {
                         className="text-white flex flex-col md:flex-row justify-start "
                       >
                         <div className="text-white min-w-fit flex px-3 pt-3 items-start text-sm md:text-lg">
-                          {`Unit ${sub3.unitNo}`}
+                          {`${sub3.unitNo == 0 ? "": `Unit  ${sub3.unitNo}`}`}
                         </div>
                         <div className="text-white w-full p-3 ">
                           {sub3.chapters.map((sub4, i4) => (
