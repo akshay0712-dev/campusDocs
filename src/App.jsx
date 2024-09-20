@@ -1,5 +1,5 @@
 import "./App.css";
-import Callender from "./components/Callender.jsx";
+import Calendar from "./components/Calendar.jsx";
 import Docs from "./components/docs.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home/Home.jsx";
@@ -80,11 +80,11 @@ function App() {
       ),
     },
     {
-      path: "/campusDocs/Callender",
+      path: "/campusDocs/Calendar",
       element: (
         <>
           <Navbar />
-          <Callender />
+          <Calendar />
           <Footer />
         </>
       ),

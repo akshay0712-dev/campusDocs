@@ -6,7 +6,7 @@ const Navs = [
   { navLink: "Docs", navText: "Docs" },
   { navLink: "WhatsGrp", navText: "WhatsGrp" },
   { navLink: "Syllabus", navText: "Syllabus" },
-  { navLink: "Callender", navText: "Callender" },
+  { navLink: "Calendar", navText: "Calendar" },
 ];
 
 const Navbar = () => {
@@ -32,12 +32,14 @@ const Navbar = () => {
           </p>
         </section>
         <section
-          className="nav2 navMenu flex justify-center text-white text-xl font-extrabold md:hidden cursor-pointer pb-5"
+          className="nav2 navMenu flex justify-center items-center text-white text-xl font-extrabold md:hidden cursor-pointer pb-5"
           onClick={() => {
             dropMenu();
           }}
         >
-          Resources
+          <span className="text-white">Resources</span>
+          <i class="material-icons text-white text-2xl font-extrabold pl-3">{
+            drop ? "expand_less" : "expand_more"}</i>
         </section>
         <section
           className={`nav2 flex md:flex flex-col md:flex-row md:gap-5 justify-center items-center md:justify-end md:px-[4vw] uppercase font-extrabold text-xl transition-all duration-500 ease-in-out overflow-hidden md:overflow-visible md:opacity-100 md:min-h-[30px] ${

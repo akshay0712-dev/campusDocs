@@ -12,7 +12,11 @@ body {
     min-height: 100vh;
     background: rgba(3, 3, 3, 0.188);
 }
+/* 
+flex items-center
+<i class="material-icons text-white">home</i>
 
+*/
 
 nav {
     --tw-bg-opacity: 1;

@@ -14,8 +14,8 @@ const services = [
   },
   {
     serviceLink: "WhatsGrp",
-    iconClass: "material-symbols-outlined ",
-    iconName: "chat",
+    iconClass: "fa fa-whatsapp text-white",
+    iconName: "",
     serviceName: "WhatsApp Groups",
   },
   {

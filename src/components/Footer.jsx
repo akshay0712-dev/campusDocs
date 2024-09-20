@@ -6,7 +6,7 @@ const Navs = [
   { navLink: "Docs", navText: "Docs" },
   { navLink: "WhatsGrp", navText: "WhatsGrp" },
   { navLink: "Syllabus", navText: "Syllabus" },
-  { navLink: "Callender", navText: "Callender" },
+  { navLink: "Calendar", navText: "Calendar" },
 ];
 
 const Footer = () => {
@@ -23,19 +23,20 @@ const Footer = () => {
           </div>
 
           {/* .......important Links */}
-            <div className="">
+          <div className="">
             <div className="head1 text-3xl md:text-4xl">Important Links</div>
 
-          <div className="flex flex-row justify-evenly" >
+            <div className="flex flex-row justify-evenly">
               <div className="flex flex-col ">
                 <NavLink
                   to="/campusDocs/Home"
                   className={(e) =>
                     `${
                       e.isActive ? "text-white" : "text-[#85888a]"
-                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center`
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
                   }
                 >
+                  <i className="material-icons text-white pr-2">home</i>
                   Home
                 </NavLink>
                 <NavLink
@@ -43,44 +44,53 @@ const Footer = () => {
                   className={(e) =>
                     `${
                       e.isActive ? "text-white" : "text-[#85888a]"
-                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center`
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
                   }
                 >
+                  <span className="material-symbols-outlined pr-2">
+                    file_copy
+                  </span>
                   Docs
                 </NavLink>
-              </div>
-              <div className="flex flex-col ">
                 <NavLink
                   to="/campusDocs/WhatsGrp"
                   className={(e) =>
                     `${
                       e.isActive ? "text-white" : "text-[#85888a]"
-                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center`
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
                   }
                 >
+                  <i className="fa fa-whatsapp text-white pr-2 font-bold text-lg"></i>
                   WhatsGrp
                 </NavLink>
+              </div>
+
+              <div className="flex flex-col ">
                 <NavLink
                   to="/campusDocs/Syllabus"
                   className={(e) =>
                     `${
                       e.isActive ? "text-white" : "text-[#85888a]"
-                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center`
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
                   }
                 >
+                  <span className="material-symbols-outlined pr-2">
+                    menu_book
+                  </span>
                   Syllabus
                 </NavLink>
-              </div>
-              <div className="flex flex-col ">
                 <NavLink
-                  to="/campusDocs/Callender"
+                  to="/campusDocs/Calendar"
                   className={(e) =>
                     `${
                       e.isActive ? "text-white" : "text-[#85888a]"
-                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center`
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
                   }
                 >
-                  Callender
+                  <span className="material-symbols-outlined pr-2">
+                    calendar_month
+                  </span>
+                  Calendar
                 </NavLink>
               </div>
             </div>
@@ -114,7 +124,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <hr className="mt-3"/>
+        <hr className="mt-3" />
       </footer>
     </>
   );
