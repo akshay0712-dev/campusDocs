@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Guerrilla&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: "Balsamiq Sans", sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: rgba(3, 3, 3, 0.188);
+}
+
+
+nav {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 13;
+}
+
+.nav1 {
+    min-height: 10vh;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2{
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .nav2 a, .navMenu{
+        border-bottom: 4px solid rgb(104, 110, 119);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.nav1 .navName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 .tittle {
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.nav1 .navName img {
+    width: 80px;
+    min-height: auto;
+}
+
+.nav1 .navName p {
+    font-size: xx-large;
+    color: aliceblue;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 0 2vw;
+}
+
+.nav1 p {
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 2vw;
+}
+
+.nav1 p span {
+    font-size: 30px;
+    color: rgb(3, 209, 3);
+}
+
+/* Style the search box inside the navigation bar */
+.nav1 input[type=text] {
+    float: right;
+    padding: 6px 20px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.docs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.docs .thead {
+    background: #393939;
+    display: grid;
+    grid-template-columns: 10% 65% 25%;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 8vh;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+
+.docs .thead .th {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #12833E;
+}
+
+.docs .tbody .td {
+    text-transform: capitalize;
+    font-weight: 550;
+}
+
+.docs .tbody {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 10% 65% 25%;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 10vh;
+}
+
+.docs .tbody:nth-child(odd) {
+    background: #222222;
+
+}
+
+.docs .tbody:nth-child(even) {
+    background: #808080;
+
+}
+
+
+.docs .thead .th:nth-child(1),
+.docs .tbody .td:nth-child(1) {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.docs .thead .th:nth-child(2),
+.docs .tbody .td:nth-child(2) {
+    text-align: center;
+    width: 100%;
+}
+
+.docs .thead .th:nth-child(3),
+.docs .tbody .td:nth-child(3) {
+    text-align: center;
+}
+
+.docs .tbody:nth-child(odd) .td {
+    color: #808080;
+}
+
+.docs .tbody:nth-child(even) .td {
+    color: #222222;
+}
+
+.docs .tbody:last-child {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.docs .tbody .td:nth-child(3) {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.docs .tbody .td:nth-child(3):hover {
+    background-color: #45a049;
+
+    transform: scale(1.15);
+
+}
+
+.docs .tbody .td span {
+    color: white;
+}
+
+
+.material-symbols-outlined {
+    font-size: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 600px) {
+    .nav1 {
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-evenly;
+    }
+
+    .nav1 .navName p,
+    .nav1 p {
+        font-size: medium;
+        padding: 0 1vw;
+    }
+
+    .nav1 p {
+        font-size: 20px;
+        padding: 0 1vw;
+    }
+
+    .nav1 p span {
+        font-size: 25px;
+    }
+
+    .nav1 input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 80%;
+        margin: 0;
+        padding: 3px 10px;
+    }
+
+    .nav1 input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    .docs .thead {
+        min-height: 6vh;
+        grid-template-columns: 14% 40% 40%;
+        width: 94%;
+    }
+
+    .docs .tbody {
+        min-height: 6vh;
+        grid-template-columns: 14% 40% 40%;
+        width: 94%;
+    }
+
+    .docs .tbody .td .down {
+        display: none;
+    }
+
+    .docs .tbody .td:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px 10px 15px;
+        width: fit-content;
+
+    }
+
+
+
+    .docs .tbody:nth-child(odd) .td {
+        color: #b8b0b0;
+    }
+
+    .docs .tbody:nth-child(even) .td {
+        color: #f9f9f9;
+    }
+}
+
+
+/* whatsapp groups */
+.whatsGroup {
+    margin: 2vh auto;
+    /* z-index: 5; */
+    width: 80%;
+    background: #464444;
+    border-radius: 9px;
+    overflow: hidden;
+
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7vh;
+    border: 2px solid rgb(101, 99, 99);
+    padding: 2vh 0;
+}
+
+.container h1 {
+    color: #25D366;
+    text-align: center;
+}
+
+.container .grpLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.container p {
+    overflow: hidden;
+    color: #daedf9;
+    font-size: large;
+    text-overflow: ellipsis;
+}
+
+/* Button styling */
+.whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #25D366;
+    /* WhatsApp Green Color */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-family: serif;
+}
+
+/* Hover effect */
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+    /* Darker Green on Hover */
+}
+
+/* Debugging: visual indication for the link */
+.whatsapp-button:active {
+    background-color: #128c7e;
+    /* Even darker on click */
+}
+
+@media screen and (max-width: 600px) {
+    .whatsGroup {
+        width: 95%;
+    }
+
+    .container {
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 8vh ;
+
+    }
+
+    .container p {
+        font-size: small;
+    }
+}
+
+
+/* .....footer....... */
+
+footer {
+    
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100vw;
+}

@@ -1,0 +1,55 @@
+.homePage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.homePage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(50%);
+    display: block;
+    z-index: -2;
+}
+
+.homePage h1,
+.homePage h3 {
+    position: absolute;
+
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    z-index: 1;
+}
+
+.homePage h1 {
+    font-size: 3.5em;
+    top: 15%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+.homePage h3 {
+    margin-top: 0.5em;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+    .homePage h1 {
+        font-size: 2.5em;
+    }
+    .homePage h3 {
+        font-size: 14px;
+        top: 30%;
+    }
+}
+
+/* ..........Services......... */
+
