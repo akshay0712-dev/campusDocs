@@ -23,15 +23,15 @@ const whatsGroup = [
 const whats = () => {
   return (
    <>
-    <div className="whatsGroup">
-        <div className="container">
+    <div className="whatsGroup bg-slate-800">
+        <div className="container border-b-2 border-slate-600 ">
           {/* WhatsApp Group Button  */}
           <h1 className='py-1 tracking-wider text-xl md:text-3xl '>Group Name</h1>
           <h1 className="py-1 tracking-wider text-xl md:text-3xl grpLinks">Group Link</h1>
         </div>
 
         {whatsGroup.map((whats, index) => (
-          <div className="container" key={index}>
+          <div className="container border-b-2 border-slate-600 " key={index}>
             <p>{whats.name}</p>
             <a
               href={`${whats.link}`}

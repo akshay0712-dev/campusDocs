@@ -11,18 +11,18 @@ const Docs = () => {
   return (
     <>
     <section className="docs">
-        <div className="thead">
+        <div className="thead bg-slate-800">
           <div className="th">S.No.</div>
           <div className="th">Docs Name</div>
           <div className="th">Dowload</div>
         </div>
         {files.map((file, index) => (
           <div className="tbody" key={index}>
-            <div className="td">{index + 1}</div>
-            <a className="td" href={`./docs/${file.name}`}>
+            <div className="td text-[#c9c8c8] md:text-xl">{index + 1}</div>
+            <a className="td text-[#c9c8c8] md:text-xl" href={`./docs/${file.name}`}>
               {file.label}
             </a>
-            <a className="td" href={`./docs/${file.name}`}>
+            <a className="td  text-[#c9c8c8] md:text-xl" href={`./docs/${file.name}`}>
               <span className="down">Dowload</span>
               <span className="material-symbols-outlined"> download </span>
             </a>
