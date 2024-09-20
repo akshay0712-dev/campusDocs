@@ -42,8 +42,8 @@ const Home = () => {
     <>
       <div className="homePage">
         <img src="./images/homeBg2.jpg" alt="" />
-        <h1>Welcome to CampusDocs</h1>
-        <h3>Your one-stop platform for Campus Resources and More</h3>
+        <h1>Welcome to OneStop.</h1>
+        <h3>Discover OneStop: The go-to platform for all your college needs</h3>
       </div>
 
       <section className="flex flex-row justify-between flex-wrap w-[95vw] md:w-[80vw] bg-gray-800 m-auto rounded-xl my-[3vh] p-6 md:p-8">

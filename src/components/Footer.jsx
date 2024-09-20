@@ -20,6 +20,9 @@ const Footer = () => {
           <div className="border-b-2 md:border-b-0 border-[#bbb8b8] md:border-r-2 ">
             <p className="head1 text-3xl md:text-6xl">Get in touch!</p>
             <p className="head2 text-sm md:text-xl">akshayrishu4@gmail.com</p>
+            <p className="tittle text-white text-[30px] text-center pt-9 font-extrabold tracking-widest">
+            <span className="tracking-wide">&lt;</span>One<span className="tracking-wide">Stop.</span>&gt;
+          </p>
           </div>
 
           {/* .......important Links */}

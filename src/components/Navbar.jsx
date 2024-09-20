@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
 
           <p className="tittle">
-            &lt;<span>C</span>ampus<span>Docs</span>&gt;
+            <span>&lt;</span>One<span>Stop.</span>&gt;
           </p>
         </section>
         <section

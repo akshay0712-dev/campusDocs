@@ -54,7 +54,7 @@ nav {
     align-items: center;
 }
 
-.nav1 .tittle {
+.tittle {
     font-family: "Protest Guerrilla", sans-serif;
     letter-spacing: 1.5px;
 }
@@ -82,7 +82,7 @@ nav {
     padding: 0 2vw;
 }
 
-.nav1 p span {
+.tittle span {
     font-size: 30px;
     color: rgb(3, 209, 3);
 }
@@ -235,7 +235,7 @@ a {
         padding: 0 1vw;
     }
 
-    .nav1 p span {
+    .tittle span {
         font-size: 25px;
     }
 
