@@ -4,7 +4,7 @@ import Docs from "./components/docs.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Syllabus from "./components/syllabus.jsx";
+import Syllabus from "./components/syllabus/syllabus.jsx";
 import Whats from "./components/whats.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

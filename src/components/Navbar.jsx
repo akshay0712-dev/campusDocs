@@ -38,7 +38,7 @@ const Navbar = () => {
           }}
         >
           <span className="text-white">Resources</span>
-          <i class="material-icons text-white text-2xl font-extrabold pl-3">{
+          <i className="material-icons text-white text-2xl font-extrabold pl-3">{
             drop ? "expand_less" : "expand_more"}</i>
         </section>
         <section
