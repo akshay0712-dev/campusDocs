@@ -28,7 +28,7 @@ const syllabus = () => {
   return (
     <>
 
-    <section className="w-[90vw] flex justify-evenly mx-auto gap-6 my-6">
+    <section className="w-[95vw] md:w-[80vw] flex justify-evenly mx-auto gap-6 my-6">
        
         <section className="w-[fit]">
           <section
