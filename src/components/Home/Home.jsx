@@ -42,8 +42,10 @@ const Home = () => {
     <>
       <div className="homePage">
         <img src="./images/homeBg2.jpg" alt="" />
-        <h1 className="text-lg leading-none w-[95vw]">Welcome to  OneStop.</h1>
-        <h3 className="w-[80vw]">Discover OneStop: The go-to platform for all your college needs</h3>
+        <h1 className="text-lg leading-none w-[95vw]">Welcome to OneStop.</h1>
+        <h3 className="w-[80vw]">
+          Discover OneStop: The go-to platform for all your college needs
+        </h3>
       </div>
 
       <section className="flex flex-row justify-between flex-wrap w-[95vw] md:w-[80vw] bg-gray-800 m-auto rounded-xl my-[3vh] p-6 md:p-8">
@@ -64,11 +66,13 @@ const Home = () => {
       </section>
 
       <Whats />
-      <NavLink   to={`/campusDocs/Syllabus`}>
-        <div className="mx-auto w-[95vw] md:w-[80vw] max-h-[80vh] overflow-y-scroll">
-          <Syllabus />
-        </div>
-      </NavLink>
+      <div className="syllabus-box mx-auto w-[95vw] md:w-[80vw] max-h-[80vh] rounded-lg overflow-hidden ">
+        <NavLink to={`/campusDocs/Syllabus`}>
+          <div className="mx-auto w-[95vw] md:w-[80vw] max-h-[80vh] overflow-y-auto overflow-x-hidden custom-scrollbar ">
+            <Syllabus />
+          </div>
+        </NavLink>
+      </div>
       <Docs />
     </>
   );
