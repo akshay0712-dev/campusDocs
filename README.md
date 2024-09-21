@@ -1,18 +1,28 @@
-# CampusDocs
+# OneStop
 
-Welcome to **CampusDocs**! This is a web application designed to streamline access to essential documents and college WhatsApp groups for students. With CampusDocs, you can easily find and download important forms and join relevant WhatsApp groups—all in one place.
+Welcome to **OneStop**! This is a web application designed to streamline access to essential documents, syllabus, college WhatsApp groups for students and more. With OneStop, you can easily find and download important forms, join relevant WhatsApp groups, view syllabus, and keep track of academic events—all in one place!
 
-## Features
+## Pages
 
-- **Document Repository**: Access a variety of essential documents such as medical forms and anti-ragging formats.
-- **WhatsApp Group Hub**: View and join all college WhatsApp groups directly from the website.
-- **Responsive Design**: Enjoy a seamless experience on both mobile and desktop devices.
+- **Home**: The central hub for accessing all features of the site.
+- **Docs**: A repository for all essential documents such as medical formate and anti-ragging formats etc.
+- **WhatsGrp**: View and join all college WhatsApp groups directly from the website.
+- **Syllabus**: Access syllabus organized by department and semester.
+- **Calendar**: Stay updated with important academic dates and events.
+
+## Key Features
+
+- **Instant Access to Documents**: Easily find and download frequently requested documents, like medical-formate, and anti-ragging formats etc.
+- **Join Your College WhatsApp Groups**: Discover all your college WhatsApp groups in one hub. Simply click the “Join Group” button and stay connected with your peers.
+- **Syllabus Section**: Browse syllabus for various courses and semesters, ensuring you have all the necessary information for your studies.
+- **Academic Calendar**: Keep track of important dates, deadlines, and events in your college calendar.
 - **User-Friendly Interface**: Navigate the site effortlessly with a clean and intuitive design.
 
 ## Technologies Used
 
-- **Frontend**:  React, vite
-- **Styling**: CSS
+- **Frontend**:  React
+- **Styling**: Tailwind CSS
+- **Routing Framework**: React Router DOM
 
 ## Getting Started
 
@@ -48,8 +58,10 @@ Welcome to **CampusDocs**! This is a web application designed to streamline acce
 
 ## Usage
 
-- **Document Access**: Browse or search for documents from the main page.
-- **Join WhatsApp Groups**: Click the "Join Group" button next to each group name to join via WhatsApp.
+- **Document Access**: Browse or search for documents from the **Docs** page.
+- **Join WhatsApp Groups**: Click the "Join Group" button next to each group name on the **WhatsGrp** page.
+- **View Syllabus**: Access Syllabus organized by course and semester from the **Syllabus** page.
+- **Check Calendar**: Stay updated with important dates in the **Calendar** section.
 
 ## Contributing
 
@@ -67,9 +79,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at [akshayrishu4@gmail.com] .
+For any questions or suggestions, feel free to contact me at [your-email@example.com].
 
 ---
 
 Thank you for using CampusDocs!
-
