@@ -4,6 +4,7 @@ import "./Home.css";
 import Whats from "../whats.jsx";
 import Docs from "../docs.jsx";
 import Syllabus from "../syllabus/syllabus.jsx";
+import Weather from "../weather.jsx";
 
 const services = [
   {
@@ -35,17 +36,20 @@ const services = [
   //   iconName: "",
   //   serviceName: "",
   // },
-]; 
+];
 
 const Home = () => {
   return (
     <>
       <div className="homePage">
-        <img src="./images/homeBg2.jpg" alt="" />
+        <img className="bgImg" src="./images/homeBg2.jpg" alt="" />
         <h1 className="text-lg leading-none w-[95vw]">Welcome to OneStop.</h1>
         <h3 className="w-[80vw]">
           Discover OneStop: The go-to platform for all your college needs
         </h3>
+        <div className="absolute z-10 right-0 bottom-[0%] md:bottom-[76%]  text-white">
+          <Weather />
+        </div>
       </div>
 
       <section className="flex flex-row justify-between flex-wrap w-[95vw] md:w-[80vw] bg-gray-800 m-auto rounded-xl my-[3vh] p-6 md:p-8">

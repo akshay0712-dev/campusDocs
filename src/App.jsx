@@ -6,9 +6,11 @@ import Footer from "./components/Footer.jsx";
 import Home from "./components/Home/Home.jsx";
 import Map from "./components/map.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Resources from "./components/Resource/Resources.jsx";
 import Syllabus from "./components/syllabus/syllabus.jsx";
 import Weather from "./components/weather.jsx";
 import Whats from "./components/whats.jsx";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function ErrorPage() {
@@ -118,6 +120,16 @@ function App() {
         <>
           <Navbar />
           <Weather />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/campusDocs/Resources",
+      element: (
+        <>
+          <Navbar />
+          <Resources />
           <Footer />
         </>
       ),
