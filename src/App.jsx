@@ -1,10 +1,13 @@
 import "./App.css";
+import About from "./components/About.jsx";
 import Calendar from "./components/Calendar.jsx";
 import Docs from "./components/docs.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home/Home.jsx";
+import Map from "./components/map.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Syllabus from "./components/syllabus/syllabus.jsx";
+import Weather from "./components/weather.jsx";
 import Whats from "./components/whats.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -85,6 +88,36 @@ function App() {
         <>
           <Navbar />
           <Calendar />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/campusDocs/Map",
+      element: (
+        <>
+          <Navbar />
+          <Map />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/campusDocs/About",
+      element: (
+        <>
+          <Navbar />
+          <About />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/campusDocs/Weather",
+      element: (
+        <>
+          <Navbar />
+          <Weather />
           <Footer />
         </>
       ),

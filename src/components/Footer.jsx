@@ -111,19 +111,20 @@ const Footer = () => {
               className="hover:scale-125"
               href="https://www.instagram.com/akshay__rishu/"
             >
-              <i className="fa fa-instagram text-white text-xl md:text-2xl "></i>
+              <i className="fa fa-instagram"></i>
+
             </a>
             <a
               className="hover:scale-125"
               href="https://www.linkedin.com/in/akshay-kumar-93b487215/"
             >
-              <i className="fa fa-linkedin text-white text-xl md:text-2xl "></i>
+              <i className="fa fa-linkedin text-white text-xl md:text-2xl hover:bg-linkedin  hover:rounded-full"></i>
             </a>
             <a
               className="hover:scale-125"
               href="https://github.com/akshay0712-dev/campusDocs"
             >
-              <i className="fa fa-github text-white text-xl md:text-2xl "></i>
+              <i className="fa fa-github text-white text-xl md:text-2xl hover:text-[#181717] h-fit px-1 hover:bg-white  hover:rounded-full"></i>
             </a>
           </div>
         </div>

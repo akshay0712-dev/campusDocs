@@ -26,15 +26,17 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 10px;
+    /* background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D); */
+    background:linear-gradient(to bottom, rgba(39, 1, 1, 0.4), rgb(157, 156, 159));
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #585858;
-    /* background: -webkit-linear-gradient(to bottom, #6A82FB, #FC5C7D); */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background:linear-gradient(to bottom, rgba(255,0,0,0.4), rgb(132, 0, 255));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.fa-instagram{
+    @apply text-white text-xl md:text-2xl hover:bg-gradient-to-r hover:from-[#FCAF45] hover:via-[#E1306C] hover:to-[#833AB4] px-1 h-fit rounded-full;
+}
+.fa-linkedin:hover,
+.fa-instagram:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {

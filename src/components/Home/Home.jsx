@@ -35,7 +35,7 @@ const services = [
   //   iconName: "",
   //   serviceName: "",
   // },
-];
+]; 
 
 const Home = () => {
   return (
