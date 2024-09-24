@@ -5,6 +5,8 @@ import Whats from "../whats.jsx";
 import Docs from "../docs.jsx";
 import Syllabus from "../syllabus/syllabus.jsx";
 import Weather from "../weather.jsx";
+import Map from "../map.jsx";
+
 
 const services = [
   {
@@ -69,6 +71,7 @@ const Home = () => {
         ))}
       </section>
 
+      <Docs />
       <Whats />
       <div className="syllabus-box mx-auto w-[95vw] md:w-[80vw] max-h-[80vh] rounded-lg overflow-hidden ">
         <NavLink to={`/campusDocs/Syllabus`}>
@@ -77,7 +80,7 @@ const Home = () => {
           </div>
         </NavLink>
       </div>
-      <Docs />
+      <Map />
     </>
   );
 };
