@@ -7,16 +7,20 @@ const whatsGroup = [
       link: "https://chat.whatsapp.com/Fyxim2had5aEn3eqUATL35",
     },
     {
-      name: "The Bihar Engineers",
-      link: "https://chat.whatsapp.com/EIjncJ5yst9AUQKFotABs4",
+      name: "Student's Group GEC Kishanganj",
+      link: "https://chat.whatsapp.com/JENVus3tGTDJT5k565XEFx",
     },
     {
       name: "BEU DISCUSSION GROUP",
       link: "https://chat.whatsapp.com/HJaWJHkqnjVGWhzo7F1erj",
     },
     {
-      name: "Student's Group GEC Kishanganj",
-      link: "https://chat.whatsapp.com/JENVus3tGTDJT5k565XEFx",
+      name: "The Bihar Engineers",
+      link: "https://chat.whatsapp.com/EIjncJ5yst9AUQKFotABs4",
+    },
+    {
+      name: "Bihar Engineering University, Patna",
+      link: "https://chat.whatsapp.com/KmFQ9HWWyNlDkbSagEup6e",
     },
   ];
 
@@ -25,7 +29,6 @@ const whats = () => {
    <>
     <div className="whatsGroup bg-slate-800">
         <div className="container border-b-2 border-slate-600 ">
-          {/* WhatsApp Group Button  */}
           <h1 className='py-1 tracking-wider text-xl md:text-3xl '>Group Name</h1>
           <h1 className="py-1 tracking-wider text-xl md:text-3xl grpLinks">Group Link</h1>
         </div>

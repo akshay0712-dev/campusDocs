@@ -10,7 +10,7 @@ const map = () => {
         allowfullscreen="true"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        className="w-[95vw] my-3 md:w-[80vw] mx-auto rounded-2xl "
+        className="w-[95vw] my-3 md:w-[80vw] mx-auto rounded-2xl border-0"
       ></iframe>
     </>
   );

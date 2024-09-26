@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navs = [
-  { navLink: "Home", navText: "Home" },
-  { navLink: "Docs", navText: "Docs" },
-  { navLink: "WhatsGrp", navText: "WhatsGrp" },
-  { navLink: "Syllabus", navText: "Syllabus" },
-  { navLink: "Calendar", navText: "Calendar" },
-];
+// const Navs = [
+//   { navLink: "Home", navText: "Home" },
+//   { navLink: "Docs", navText: "Docs" },
+//   { navLink: "WhatsGrp", navText: "WhatsGrp" },
+//   { navLink: "Syllabus", navText: "Syllabus" },
+//   { navLink: "Calendar", navText: "Calendar" },
+//   { navLink: "map", navText: "Map" },
+// ];
 
 const Footer = () => {
   return (
@@ -94,6 +95,19 @@ const Footer = () => {
                     calendar_month
                   </span>
                   Calendar
+                </NavLink>
+                <NavLink
+                  to="/campusDocs/map"
+                  className={(e) =>
+                    `${
+                      e.isActive ? "text-white" : "text-[#85888a]"
+                    } uppercase p-4 cursor-pointer hover:scale-125 w-full md:w-fit text-center flex items-center`
+                  }
+                >
+                  <span className="material-symbols-outlined pr-2">
+                  location_on
+                  </span>
+                  Map
                 </NavLink>
               </div>
             </div>
