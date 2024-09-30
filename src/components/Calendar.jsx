@@ -8,13 +8,13 @@ const Calendar = () => {
         Hang tight! This feature is coming soon
       </p> */}
 
-      <div className="h-[80vh] w-[50vw] custom-scrollbar my-6 rounded-xl mx-auto overflow-scroll ">
+      <div className="h-[80vh] w-[90vw] md:w-[50vw] custom-scrollbar my-6 rounded-xl mx-auto overflow-scroll ">
         {img.map((img, i) => (
           <div key={img} className="overflow-hidden ">
             <img
               src={`./docs/InductionProgam2024/InductionProgam2024_page-${img}.jpg`}
               alt=""
-              className="w-[50vw]  "
+              className="md:w-[50vw] w-[90vw] "
             />
           </div>
         ))}

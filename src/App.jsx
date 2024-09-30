@@ -6,6 +6,7 @@ import Footer from "./components/Footer.jsx";
 import Gallery from "./components/gallery/gallery.jsx";
 import Home from "./components/Home/Home.jsx";
 import Map from "./components/map.jsx";
+import Menu from "./components/Menu.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Resources from "./components/Resource/Resources.jsx";
 import Syllabus from "./components/syllabus/syllabus.jsx";
@@ -132,6 +133,16 @@ function App() {
         <>
           <Navbar />
           <Weather />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/campusDocs/Menu",
+      element: (
+        <>
+          <Navbar />
+          <Menu />
           <Footer />
         </>
       ),
