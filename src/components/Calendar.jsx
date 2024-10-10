@@ -2,30 +2,21 @@ import React, { useState } from "react";
 import map from "./map";
 const img = ["0001", "0002", "0003", "0004", "0005"];
 const Calendar = () => {
-
   return (
     <>
-      {/* <p className="text-center my-6 text-xl md:text-4xl text-[#1b5912]">
-        Hang tight! This feature is coming soon
-      </p> */}
       <div className="mx-auto w-[90vw] flex flex-col-reverse md:flex-row my-6 gap-3 rounded-t-xl">
         <div className="mx-auto w-[90vw] md:w-[50vw] bg-white rounded-t-xl">
-          <div
-            className="text-center text-2xl pt-3 my-3 border-b-2"
-           
-          >
-            Induction Programme Schedule 
+          <div className="text-center text-2xl pt-3 my-3 border-b-2">
+            Induction Programme Schedule
           </div>
 
-          <div
-            className={`custom-scrollbar rounded-xl  `}
-          >
+          <div className={`custom-scrollbar rounded-xl  `}>
             {img.map((img, i) => (
               <div key={img} className=" ">
                 <img
                   src={`./docs/InductionProgam2024/InductionProgam2024_page-${img}.jpg`}
                   alt=""
-                  className="md:w-[50vw] w-[90vw]  6"
+                  className="md:w-[50vw] w-[90vw]  rounded-b-xl"
                 />
               </div>
             ))}
