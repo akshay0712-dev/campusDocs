@@ -24,6 +24,15 @@ const Calendar = () => {
         </div>
         <div className="w-[90vw] md:w-[45vw] ">
           <div className="text-center text-2xl pt-3 border-b-2 bg-white rounded-t-xl">
+            Exam Shedule
+          </div>
+          {/* <div className="bg-white text-center w-[45vw]  ">Computer Science Time Table</div> */}
+          <img
+            src="images/ExamRoutin.png"
+            alt="Routine_CS"
+            className="rounded-b-xl mb-2"
+          />
+          <div className="text-center text-2xl pt-3 border-b-2 bg-white rounded-t-xl">
             Computer Science Time Table
           </div>
           {/* <div className="bg-white text-center w-[45vw]  ">Computer Science Time Table</div> */}
