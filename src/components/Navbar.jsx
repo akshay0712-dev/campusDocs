@@ -33,7 +33,7 @@ const Navbar = () => {
             <NavLink to="/">
               <img src="./images/gec_kishangan_logo.png" alt="" />
             </NavLink>
-            <p>Government Engineering College, Kishanganj</p>
+            <p>Government Engineering, Kishanganj</p>
           </div>
 
           <p className="tittle">
